@@ -1,0 +1,265 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+body {
+  .scroll1::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+  .scroll1::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+   
+  .scroll1::-webkit-scrollbar-thumb {
+    background: red; 
+  }
+}
+.main-container {
+    header {
+      position: fixed;
+      z-index: 3;
+      width: 100%;
+      top: 0;
+    }
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 66px;
+    
+    // scrollbar-width: thin;
+    .wrapper {
+        section {
+          min-height: 200px;
+          padding-top: 66px;
+        }
+        .service {
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 120px;
+          position: relative;
+          .caption {
+            font-size: 3vh;
+            font-weight: 700;
+            position: absolute;
+            top: 70px;            
+          }
+          .ser-box1 {
+            flex: 1 1 250px;
+            margin: 10px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            padding: 9px;
+            width: 300px;
+            h2 {
+              font-size: 16px;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+            }
+            img {
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+            }
+          }
+        }
+        .support {
+          .support {
+            display: flex;
+            flex-wrap: nowrap;
+            .image {
+              flex: 0 0 50%;
+              img {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+              }
+            }
+            .content {
+              text-align: justify;
+              padding: 5px 10px;
+            }
+            @media only screen and (max-width: 700px) {
+              flex-direction: column;
+            }
+          }
+        }
+        padding: 0 10px;    
+        opacity: 1;
+        min-height: 60vh;
+        text-align: justify;
+        .aboutus {
+          padding-top: 66px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          .caption {
+            font-size: 3vh;
+            font-weight: 700;
+            position: absolute;
+            top: 66px;
+            background: rgba(255,255,255,.5);
+            padding: 5px 10px;
+            width: 100%;
+          }
+          .aboutus-image {
+            padding-bottom: 25px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          // .service {
+          //   border: 1px solid lightgray;
+          //   border-radius: 10px;
+          //   margin: 20px;
+          //   box-shadow: 2px 2px 2px lightgrey, 2px 2px 2px lightgrey, 2px 2px 2px lightgrey;
+          //   text-align: left;
+
+          //   flex: 0 0 300px;
+          //   margin: 0 10px 10px 20px;
+          //   padding: 10px;
+
+          //   ul {
+          //     width: 100%;
+          //   }
+          //   @media screen and (max-width: 1023px) {
+          //     margin-left: 10px;
+          //     width: 100%;
+          //     flex: 0 0 auto;
+          //   }
+          // }
+        }
+        
+    }
+    nav {
+        .nav-link {
+            font-size: 2.7vh;
+        }
+        img {
+            // width: 30px;
+            position: relative;
+            top: 1px;
+            right: 6px;
+        }
+    }
+}
+
+html {
+  padding: 0px;
+  background: white;
+}
+
+.content-wrap {
+  // padding-bottom: 4rem;    /* Footer height */
+}
+.bottom-links {
+  padding-top: 66px;
+  div.links {
+    // min-height: 200px;
+    background: #2D3388;
+    color: rgb(234, 235, 241);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: stretch;
+    padding: 20px 0;
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      padding: 20px 20px;
+    }
+    div {
+      
+      // width: 300px;
+      flex-basis: auto;
+      // text-align: center;
+      display: flex;
+      flex-direction: column;
+      span {
+        span {
+          color: gray;
+        }
+      }
+      
+      @media only screen and (max-width: 700px) {
+        padding-bottom: 20px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  div.second-link { 
+    padding: 10px 0;
+    background: rgb(2, 8, 56);
+    color: rgb(234, 235, 241);
+    font-size: 2.2vh;
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin-left: -40px;
+      // @media only screen and (max-width: 700px) {
+        flex-wrap: wrap;
+      // }
+      justify-content: space-evenly;
+      li {
+        // min-width: 50px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  border: none;
+  text-align: center;
+  background: rgb(2, 8, 56);
+  color: rgb(234, 235, 241);
+  font-size: 2.2vh;
+  height: auto;
+  padding: 6px;
+}
+
+.ui-paginator-page {
+    padding: 0cm 0cm !important;
+}
+
+.snack-bar-color {
+  background-color: #ffffff !important;
+  color: #000;
+
+  button {
+    color: blue;
+  }
+}
+  
+.ui-datatable .ui-datatable-data tr.ui-state-highlight {
+    background: lightblue !important;
+}
+
+.material-icons {
+    color: #696969;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: blue;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: lightblue;
+}
+
+.bg-light {
+    background-color: #F1F2F6!important;
+}
