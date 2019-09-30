@@ -4,3 +4,8 @@
 4. About us - need to be 2 column in higher resolution
 5. Support - image rounded corner and update the content and allign the download link to center.
 6. Logo link - liknk to about us.
+
+
+console erro
+chrome audit - performance and best practices
+HTML - semantic tags and CSS code optimization

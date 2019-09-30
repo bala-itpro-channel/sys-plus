@@ -1,18 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-body {
-  .scroll1::-webkit-scrollbar {
-    width: 2px;
-  }
-   
-  .scroll1::-webkit-scrollbar-track {
-    background: #ddd;
-  }
-   
-  .scroll1::-webkit-scrollbar-thumb {
-    background: red; 
-  }
+// Scroll bar
+::-webkit-scrollbar {
+  width: 5px;
 }
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+  
+::-webkit-scrollbar-thumb {
+  background:  rgb(2, 8, 56); 
+}
+// Firefox try
+// body {
+//   scrollbar-color: rebeccapurple green;
+//   scrollbar-width: thin;
+// }
 .main-container {
     header {
       position: fixed;
@@ -24,24 +28,24 @@ body {
     position: relative;
     padding-bottom: 40px;
     padding-top: 66px;
-    
-    // scrollbar-width: thin;
     .wrapper {
         section {
           min-height: 200px;
           padding-top: 66px;
+          .caption {
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            color: darkblue;
+            left: 20px;
+            top: 70px;            
+          }
         }
         .service {
           display: flex;
           flex-wrap: wrap;
           padding-top: 120px;
           position: relative;
-          .caption {
-            font-size: 3vh;
-            font-weight: 700;
-            position: absolute;
-            top: 70px;            
-          }
           .ser-box1 {
             flex: 1 1 250px;
             margin: 10px;
@@ -59,11 +63,14 @@ body {
               margin-left: auto;
               margin-right: auto;
               display: block;
+              width: 100%;
             }
           }
         }
         .support {
-          .support {
+          padding-top: 120px;
+          position: relative;
+          .support-sub {
             display: flex;
             flex-wrap: nowrap;
             .image {
@@ -72,6 +79,7 @@ body {
                 width: 100%;
                 height: auto;
                 padding: 10px;
+                border-radius: 20px;
               }
             }
             .content {
@@ -90,60 +98,26 @@ body {
         .aboutus {
           padding-top: 66px;
           display: flex;
-          flex-wrap: wrap;
           justify-content: center;
           align-items: center;
           position: relative;
-          .caption {
-            font-size: 3vh;
-            font-weight: 700;
-            position: absolute;
-            top: 66px;
-            background: rgba(255,255,255,.5);
-            padding: 5px 10px;
-            width: 100%;
+          flex-flow: column nowrap;
+          @media (min-width: 700px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
           }
           .aboutus-image {
             padding-bottom: 25px;
+            @media (min-width: 700px) {
+              flex: 0 0 50%;
+            }
             img {
               width: 100%;
               height: auto;
             }
           }
-
-          // .service {
-          //   border: 1px solid lightgray;
-          //   border-radius: 10px;
-          //   margin: 20px;
-          //   box-shadow: 2px 2px 2px lightgrey, 2px 2px 2px lightgrey, 2px 2px 2px lightgrey;
-          //   text-align: left;
-
-          //   flex: 0 0 300px;
-          //   margin: 0 10px 10px 20px;
-          //   padding: 10px;
-
-          //   ul {
-          //     width: 100%;
-          //   }
-          //   @media screen and (max-width: 1023px) {
-          //     margin-left: 10px;
-          //     width: 100%;
-          //     flex: 0 0 auto;
-          //   }
-          // }
-        }
-        
-    }
-    nav {
-        .nav-link {
-            font-size: 2.7vh;
-        }
-        img {
-            // width: 30px;
-            position: relative;
-            top: 1px;
-            right: 6px;
-        }
+        }        
     }
 }
 
@@ -152,35 +126,28 @@ html {
   background: white;
 }
 
-.content-wrap {
-  // padding-bottom: 4rem;    /* Footer height */
-}
 .bottom-links {
   padding-top: 66px;
   div.links {
-    // min-height: 200px;
     background: #2D3388;
     color: rgb(234, 235, 241);
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     align-items: stretch;
-    padding: 20px 0;
-    @media only screen and (max-width: 700px) {
-      flex-direction: column;
-      padding: 20px 20px;
+    flex-direction: column;
+    padding: 20px 20px;
+    @media only screen and (min-width: 700px) {
+      flex-direction: row;
+      padding: 20px 0;
     }
     div {
-      
-      // width: 300px;
       flex-basis: auto;
-      // text-align: center;
       display: flex;
       flex-direction: column;
       span {
-        span {
+        span, span a {
           color: gray;
         }
       }
@@ -202,12 +169,9 @@ html {
       list-style-type: none;
       display: flex;
       margin-left: -40px;
-      // @media only screen and (max-width: 700px) {
-        flex-wrap: wrap;
-      // }
+      flex-wrap: wrap;
       justify-content: space-evenly;
       li {
-        // min-width: 50px;
         a {
           color: white;
           text-decoration: none;
