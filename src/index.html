@@ -9,8 +9,8 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script async="" defer="" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script async="" defer="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript">
     function show(name){
         var sectionElement = document.getElementById(name);
@@ -22,142 +22,144 @@
   </script>
 </head>
 <body onload="show('aboutus')">
+  <app-root></app-root>
   <main class="main-container">
     <div class="content-wrap">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <img src="./../assets/logo-sys-plus.png" />
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="navbarDropdown" onclick="show('aboutus')" 
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        About us        
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="navbarDropdown" onclick="show('service')" 
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services        
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="navbarDropdown" onclick="show('support')"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tech-Support        
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" id="navbarDropdown" onclick="show('contactus')"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contact us        
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </header>
-        <!--The content below is only a placeholder and can be replaced.-->
-        <main class='wrapper'>
-          <section id='aboutus' class='aboutus'>
-              <div class='caption'> <div>About us</div></div>
-              <div class='aboutus-image'>
-                <img src="./assets/01-aboutus.jpg" />
-              </div>
-              <div class="description">
-                <p>Sys-Plus is an IT service company located in GTA (Scarborough), ON with 25 years sales and service experience of desktop computers, laptops, computer peripherals and computer accessories and for the past decade has been providing repair services for clients in Brampton, Mississauga, Toronto and the rest of the GTA.
-                </p>
-                <p>Just call us and we will be there to solve your computer related problems. We have a team of certified technicians to help you with all of your computer equipment repair needs. Whether it is to repair a single item or support the IT infrastructure of a large corporation, we have the knowledge and manpower to meet your demand.
-                </p>
-                <p>We can resolve any computer issues, like cleaning viruses, spy ware, tune up slow computers, fix e-mail issues, resolve wireless network issues and etc. At Sys-Plus we are confident in our expert repair and professional service. We take great satisfaction in our unparalleled response times and in delivering the ultimate level of service. The success of our company is due to our absolute commitment to guarantee the best quality service at competitive rates.
-                </p>
-              </div>
-          </section>
-          <section id="service" class="service">
-            <div class='caption'>Services</div>
-            <div class="ser-box1">
-              <h2>Computer Repair</h2>
-              <img src="assets/comp1.jpg">
-              <p>Any Make. Any Model. Any Problem. With one of the fastest repair times in the industry, we repair while you wait….</p>
-            </div>
-            <div class="ser-box1">
-              <h2>Computer Tune Up</h2>
-              <img src="assets/comp2.jpg">
-              <p>Do you need a computer tune up? If your computer is getting slow and sluggish, if it’s freezing all the time…</p>
-            </div>
-            <div class="ser-box1">
-              <h2>Laptop, Notebook and Tablet Repairs</h2>
-              <img src="assets/lap.jpg">
-              <p>From broken screens and parts to software issues, we can repair all makes and models…</p>
-            </div>
-
-            <div class="ser-box1">
-            <h2>Memory and Data Back Up</h2>
-            <img src="assets/card.jpg">                  
-            <p>We all cherish memories. So why not protect them from all the viruses and worms? We help you back up anything…</p>
-            </div>
-            <div class="ser-box1">
-            <h2>Network Services</h2>
-            <img src="assets/net.jpg">                  
-            <p>Networking has a number of benefits. Great for home entertainment, multi-player games, internet sharing and file sharing…</p>
-            </div>
-            <div class="ser-box1">
-            <h2>Viruses and Spyware</h2>
-            <img src="assets/shield.jpg">
-
-            <p>Has your computer performance slowed? Annoying pop ups? There are many signs of a Virus or Spyware infection. Safe guard…</p>
-            </div>
-            <div class="ser-box1">
-            <h2>At Home or Business Repair</h2>
-            <img src="assets/repair.jpg">                  
-            <p>We can conveniently do repairs from the comfort of your home or business. If you allow us, we can also repair most problems…</p>
-            </div>
-            <div class="ser-box1">
-            <h2>Computer Set-Up</h2>
-            <img src="assets/comp3.jpg">
-
-            <p>We promise to set up your computer according to your preferences so you can easily download and share your music, movies…</p>
-            </div>
-            <div class="ser-box1">
-            <h2>Accessories </h2>
-            <img src="assets/acc.jpg">
-
-            <p>we also offer computer accessories required for your desktop computers and laptops at competitive prices</p>
-            </div>
-            <div class="ser-box1">
-            <h2>Security Camera Installation</h2>
-            <img src="assets/cam.jpg">
-
-            <p>we also offer computer accessories required for your desktop computers and laptops at competitive prices</p>
-            </div>
-          </section>
-          <section id="support" class="support">
-            <div class='caption'>Technical Support</div>          
-            <div class="support-sub">
-                <div class="image">
-                  <img src="assets/support.jpg" />
-                </div>
-                <div class="content">
-                    Sys-Plus goal is 100% Customer Satisfaction <br>
-                    Our hands-on approach assures customer needs and expectations are fully met. All Sys-Plus clients are assigned a Project Management Implementation Specialist that will coordinate programming and installation details for a successful implementation and strong relationship.
-                    <br/>
-                    Download the Teamviewer for Technical support. <br/>
-                    <a href="http://sys-plus.net/Sys-plus.TeamViewerQS.exe">
-                      <img src="http://sys-plus.net/images/DownloadTeamviewer_win.png" alt="Download" width="200" height="78" border="0">
+      <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="nav-link" href="#" id="navbarDropdown" onclick="show('aboutus')">
+                <img src="./../assets/logo-sys-plus.png" alt="Sys-plus" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown" onclick="show('aboutus')" 
+                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About us        
                     </a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="http://sys-plus.net/Sys-plus.TeamViewerQS.zip">
-                      <img src="http://sys-plus.net/images/DownloadTeamviewer_mac.png" alt="Download" width="200" height="78" border="0">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown" onclick="show('service')" 
+                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services        
                     </a>
-                    <br/>
-                </div>
-            </div>          
-          </section>
-        </main>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown" onclick="show('support')"
+                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Tech-Support        
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown" onclick="show('contactus')"
+                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contact us        
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+      </header>
+      <!--The content below is only a placeholder and can be replaced.-->
+      <main class='wrapper'>
+        <section id='aboutus' class='aboutus'>
+            <div class='caption'> <div>About us</div></div>
+            <div class='aboutus-image'>
+              <img src="./assets/01-aboutus.jpg" alt="about us" />
+            </div>
+            <div class="description">
+              <p>Sys-Plus is an IT service company located in GTA (Scarborough), ON with 25 years sales and service experience of desktop computers, laptops, computer peripherals and computer accessories and for the past decade has been providing repair services for clients in Brampton, Mississauga, Toronto and the rest of the GTA.
+              </p>
+              <p>Just call us and we will be there to solve your computer related problems. We have a team of certified technicians to help you with all of your computer equipment repair needs. Whether it is to repair a single item or support the IT infrastructure of a large corporation, we have the knowledge and manpower to meet your demand.
+              </p>
+              <p>We can resolve any computer issues, like cleaning viruses, spy ware, tune up slow computers, fix e-mail issues, resolve wireless network issues and etc. At Sys-Plus we are confident in our expert repair and professional service. We take great satisfaction in our unparalleled response times and in delivering the ultimate level of service. The success of our company is due to our absolute commitment to guarantee the best quality service at competitive rates.
+              </p>
+            </div>
+        </section>
+        <section id="service" class="service">
+          <div class='caption'>Services</div>
+          <div class="ser-box1">
+            <h2>Computer Repair</h2>
+            <img src="assets/comp1.jpg" alt="Computer Repair" />
+            <p>Any Make. Any Model. Any Problem. With one of the fastest repair times in the industry, we repair while you wait….</p>
+          </div>
+          <div class="ser-box1">
+            <h2>Computer Tune Up</h2>
+            <img src="assets/comp2.jpg" alt="Computer Tune Up" />
+            <p>Do you need a computer tune up? If your computer is getting slow and sluggish, if it’s freezing all the time…</p>
+          </div>
+          <div class="ser-box1">
+            <h2>Laptop, Notebook and Tablet Repairs</h2>
+            <img src="assets/lap.jpg" alt="Laptop, Notebook and Tablet Repairs" />
+            <p>From broken screens and parts to software issues, we can repair all makes and models…</p>
+          </div>
+
+          <div class="ser-box1">
+          <h2>Memory and Data Back Up</h2>
+          <img src="assets/card.jpg" alt="Memory and Data Back Up" />                  
+          <p>We all cherish memories. So why not protect them from all the viruses and worms? We help you back up anything…</p>
+          </div>
+          <div class="ser-box1">
+          <h2>Network Services</h2>
+          <img src="assets/net.jpg" alt="Network Services" />                  
+          <p>Networking has a number of benefits. Great for home entertainment, multi-player games, internet sharing and file sharing…</p>
+          </div>
+          <div class="ser-box1">
+          <h2>Viruses and Spyware</h2>
+          <img src="assets/shield.jpg" alt="Viruses and Spyware" />
+
+          <p>Has your computer performance slowed? Annoying pop ups? There are many signs of a Virus or Spyware infection. Safe guard…</p>
+          </div>
+          <div class="ser-box1">
+          <h2>At Home or Business Repair</h2>
+          <img src="assets/repair.jpg" alt="At Home or Business Repair" />                  
+          <p>We can conveniently do repairs from the comfort of your home or business. If you allow us, we can also repair most problems…</p>
+          </div>
+          <div class="ser-box1">
+          <h2>Computer Set-Up</h2>
+          <img src="assets/comp3.jpg" alt="Computer Set-Up" />
+
+          <p>We promise to set up your computer according to your preferences so you can easily download and share your music, movies…</p>
+          </div>
+          <div class="ser-box1">
+          <h2>Accessories </h2>
+          <img src="assets/acc.jpg" alt="Accessories" />
+
+          <p>we also offer computer accessories required for your desktop computers and laptops at competitive prices</p>
+          </div>
+          <div class="ser-box1">
+          <h2>Security Camera Installation</h2>
+          <img src="assets/cam.jpg" alt="Security Camera Installation" />
+
+          <p>we also offer computer accessories required for your desktop computers and laptops at competitive prices</p>
+          </div>
+        </section>
+        <section id="support" class="support">
+          <div class='caption'>Technical Support</div>          
+          <div class="support-sub">
+              <div class="image">
+                <img src="assets/support.jpg" alt="Technical support" />
+              </div>
+              <div class="content">
+                  Sys-Plus goal is 100% Customer Satisfaction <br>
+                  Our hands-on approach assures customer needs and expectations are fully met. All Sys-Plus clients are assigned a Project Management Implementation Specialist that will coordinate programming and installation details for a successful implementation and strong relationship.
+                  <br/>
+                  Download the Teamviewer for Technical support. <br/>
+                  <a href="http://sys-plus.net/Sys-plus.TeamViewerQS.exe">
+                    <img src="http://sys-plus.net/images/DownloadTeamviewer_win.png" alt="Download" width="200" height="78" border="0" />
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="http://sys-plus.net/Sys-plus.TeamViewerQS.zip">
+                    <img src="http://sys-plus.net/images/DownloadTeamviewer_mac.png" alt="Download" width="200" height="78" border="0" />
+                  </a>
+                  <br/>
+              </div>
+          </div>          
+        </section>
+      </main>
     </div>
     <div id='contactus' class='bottom-links'>
       <div class='links'>
@@ -182,7 +184,14 @@
         <div>
           <span>Map</span>
           <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.682156186341!2d-79.29532998449817!3d43.77945627911715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d22bb56f02ed%3A0x2ba1af94286cc97b!2s148%20Allanford%20Rd%2C%20Scarborough%2C%20ON%20M1T%202N7!5e0!3m2!1sen!2sca!4v1569133719546!5m2!1sen!2sca" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.682156186341!2d-79.29532998449817!3d43.77945627911715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d22bb56f02ed%3A0x2ba1af94286cc97b!2s148%20Allanford%20Rd%2C%20Scarborough%2C%20ON%20M1T%202N7!5e0!3m2!1sen!2sca!4v1569133719546!5m2!1sen!2sca" 
+              width="100%" 
+              height="200" 
+              frameborder="0" 
+              style="border:0;" 
+              title="Google map"
+              allowfullscreen=""></iframe>
           </div>
         </div>
       </div>
