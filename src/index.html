@@ -22,9 +22,14 @@
   </script>
 </head>
 <body onload="show('aboutus')">
+  <noscript>
+    <div>
+      This site need Javascript. Please enable javascript in your browser 
+      and try to visit this site again
+    </div>
+  </noscript>
   <app-root></app-root>
   <main class="main-container">
-    <div class="content-wrap">
       <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="nav-link" href="#" id="navbarDropdown" onclick="show('aboutus')">
@@ -63,7 +68,6 @@
               </div>
           </nav>
       </header>
-      <!--The content below is only a placeholder and can be replaced.-->
       <main class='wrapper'>
         <section id='aboutus' class='aboutus'>
             <div class='caption'> <div>About us</div></div>
@@ -159,59 +163,58 @@
               </div>
           </div>          
         </section>
-      </main>
-    </div>
-    <div id='contactus' class='bottom-links'>
-      <div class='links'>
-        <div class="telephone">
-          <span>Telephone: <span><a href="tel:+1 (416) 321 5995">+1 (416) 321 5995</a></span></span>
-          <span>Mobile: <span><a href="tel:+1 (647) 282 4160">+1 (647) 282 4160</a></span></span>
-          <span>Email: <span><a href="mailto:info@sys-plus.net">info@sys-plus.net</a></span></span>
-          <span>Fax: <span>1 ( 416 ) 321 5995</span></span>
-        </div>
-        <div>
-          <span>Office</span>
-          <span>
-            <span>
-              148, Allanford Road, <BR/>
-              Toronto,<BR/>
-              Ontario,<BR/>
-              M1T 2N7,<BR/>
-              Canada.
-            </span>
-          </span>
-        </div>  
-        <div>
-          <span>Map</span>
-          <div>
-              <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.682156186341!2d-79.29532998449817!3d43.77945627911715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d22bb56f02ed%3A0x2ba1af94286cc97b!2s148%20Allanford%20Rd%2C%20Scarborough%2C%20ON%20M1T%202N7!5e0!3m2!1sen!2sca!4v1569133719546!5m2!1sen!2sca" 
-              width="100%" 
-              height="200" 
-              frameborder="0" 
-              style="border:0;" 
-              title="Google map"
-              allowfullscreen=""></iframe>
+        <section id='contactus' class='bottom-links'>
+          <div class='links'>
+            <div class="telephone">
+              <span>Telephone: <span><a href="tel:+1 (416) 321 5995">+1 (416) 321 5995</a></span></span>
+              <span>Mobile: <span><a href="tel:+1 (647) 282 4160">+1 (647) 282 4160</a></span></span>
+              <span>Email: <span><a href="mailto:info@sys-plus.net">info@sys-plus.net</a></span></span>
+              <span>Fax: <span>1 ( 416 ) 321 5995</span></span>
+            </div>
+            <div>
+              <span>Office</span>
+              <span>
+                <span>
+                  148, Allanford Road, <BR/>
+                  Toronto,<BR/>
+                  Ontario,<BR/>
+                  M1T 2N7,<BR/>
+                  Canada.
+                </span>
+              </span>
+            </div>  
+            <div>
+              <span>Map</span>
+              <div>
+                  <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.682156186341!2d-79.29532998449817!3d43.77945627911715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d22bb56f02ed%3A0x2ba1af94286cc97b!2s148%20Allanford%20Rd%2C%20Scarborough%2C%20ON%20M1T%202N7!5e0!3m2!1sen!2sca!4v1569133719546!5m2!1sen!2sca" 
+                  width="100%" 
+                  height="200" 
+                  frameborder="0" 
+                  style="border:0;" 
+                  title="Google map"
+                  allowfullscreen=""></iframe>
+              </div>
+            </div>
           </div>
+          <div class='second-link'>
+              <ul>
+                <li class="orb-footer-about"><a href="#" onclick="show('aboutus')">About the Sys-plus</a></li>
+                <li>|</li>
+                <li class="orb-footer-privacy"><a href="">Privacy Policy</a></li>
+                <li>|</li>
+                <li class="orb-footer-newsletter"><a href="">Get Personalised Newsletters</a></li>
+              </ul>
+          </div>
+        </section>
+      </main>
+      <footer class='footer'>
+        <div>
+            © 1997 - 2019 Sys-Plus Technologies Ont. Inc. 
+            <br/>
+            Desing and Developed by Balakrishnan.
         </div>
-      </div>
-      <div class='second-link'>
-          <ul>
-            <li class="orb-footer-about"><a href="#" onclick="show('aboutus')">About the Sys-plus</a></li>
-            <li>|</li>
-            <li class="orb-footer-privacy"><a href="">Privacy Policy</a></li>
-            <li>|</li>
-            <li class="orb-footer-newsletter"><a href="">Get Personalised Newsletters</a></li>
-          </ul>
-      </div>
-    </div>
-    <footer class='footer'>
-      <div>
-          © 1997 - 2019 Sys-Plus Technologies Ont. Inc. 
-          <br/>
-          Desing and Developed by Balakrishnan.
-      </div>
-    </footer>
+      </footer>
   </main>
   <script>
     show('aboutus');
