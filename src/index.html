@@ -9,6 +9,8 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162092299-1"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script async="" defer="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
   <script type="text/javascript">
@@ -19,6 +21,11 @@
         var menuElement = document.getElementById('navbarSupportedContent');
         menuElement.classList.remove("show");
     }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-162092299-1');
   </script>
 </head>
 <body onload="show('aboutus')">
@@ -32,7 +39,7 @@
   <main class="main-container">
       <header>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="nav-link" href="#" id="navbarDropdown" onclick="show('aboutus')">
+              <a class="nav-link" href="#" id="imagemenu" onclick="show('aboutus')">
                 <img src="./../assets/logo-sys-plus.png" alt="Sys-plus" />
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,12 +219,9 @@
         <div>
             © 1997 - 2019 Sys-Plus Technologies Ont. Inc. 
             <br/>
-            Desing and Developed by Balakrishnan.
+            Desing and Developed by <a class='designed-by' href='mailto:bala.in@gmail.com'>Bala</a>.
         </div>
       </footer>
   </main>
-  <script>
-    show('aboutus');
-  </script>
 </body>
 </html>
