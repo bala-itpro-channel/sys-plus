@@ -48,15 +48,31 @@ html {
     .service {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-evenly;
       padding-top: 120px;
       position: relative;
       .ser-box1 {
-        flex: 1 1 250px;
+        flex: 1 1 380px;
         margin: 10px;
         border: 1px solid lightgray;
         border-radius: 10px;
         padding: 9px;
-        width: 300px;
+        max-width: 380px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55);
+          img {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &:not(:hover) {
+          img {
+            transform: scale(1);
+            transition: all 0.3s ease-in-out;
+          }
+        }
         h2 {
           font-size: 16px;
           margin-left: auto;
@@ -64,6 +80,7 @@ html {
           display: block;
         }
         img {
+          padding: 10px;
           margin-left: auto;
           margin-right: auto;
           display: block;
